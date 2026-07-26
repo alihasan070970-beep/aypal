@@ -1,0 +1,84 @@
+body{overflow-x:hidden}
+a:hover{
+	text-decoration:none;
+}
+
+h2.hh {
+    margin: 0;
+    text-align: center;
+}
+h2.hh a {
+    font-size: 35px;
+    color: #fff;
+}
+.topic-tree-browser-container .topics-list-container .topic-list-content .topic-item .item-container .item-label {
+   font-weight: normal;
+}
+.help {
+    padding: 40px 0;
+	background-image: radial-gradient(circle at 0 0, #0070ba, #1546a0);
+    display: flex;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+	color:#fff;
+}
+
+.help  .text-center{width:100%}
+.help h3 {
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+.help p {
+    font-size: 25px;
+    margin: 0;
+}
+.help a{color:#fff}
+.vx_globalFooter_secondary {
+    margin-bottom: 160px;
+}
+.mob{display:none;}
+
+@media only screen and (max-width: 767px){
+	.contentContainerBordered {
+		margin: 20px auto 0;
+		border: none;
+		padding:0;
+	}
+	.vx_globalNav-headerSection_actions a {
+		display: block;
+		width: 72px;
+		float: right;
+		margin: 20px 20px 0 0;
+	}
+	.hero-selection-hcr .hero-selection-hcr-content .search-box-container {
+    margin-top: 0;
+	}
+	.mob{display:block;}
+	.mob p {
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		color: #fff;
+		margin: 0;
+	}
+	.cont h2 {
+		line-height: 28px;
+	}
+}
+@media only screen and (max-width:567px){
+	.corral {
+		width: 90%;
+		margin:0 5% 50px;
+	}
+	.help p {
+		padding: 0 20px;
+	}
+	.help p span{display:block}
+}
+@media only screen and (max-width:359px){
+	h2.hh a {
+		font-size: 26px;
+	}
+}

